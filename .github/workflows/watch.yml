@@ -1,0 +1,33 @@
+name: C++ Change Watcher
+
+on:
+  schedule:
+    - cron: "37 13 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Check C++ sources and email changes
+        env:
+          EMAIL_TO: chrismhat96@gmail.com
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: python watcher.py
+      - name: Save new baseline
+        run: |
+          if ! git diff --quiet -- state.json; then
+            git config user.name "cpp-change-watcher"
+            git config user.email "actions@users.noreply.github.com"
+            git add state.json
+            git commit -m "Update C++ watcher baseline"
+            git pull --rebase origin main
+            git push origin main
+          fi
