@@ -4,23 +4,23 @@
     "url": "https://www.open-std.org/jtc1/sc22/wg21/docs/papers/"
   },
   "MSVC compiler versions": {
-    "sha256": "9455c0a4f83e4b608b0b5b4c343196a222d2057a6e18dd9c1cc9fdb23009d413",
+    "sha256": "6f7cda5ed29be90a1e1936cd93d91d50a53082d16ad909bbffcf3d29b821dd0e",
     "url": "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions?view=msvc-170"
   },
   "MSVC conformance and behavior changes": {
-    "sha256": "cf7e0c5f366cf8d3c5d0108f73cb568a459dad35e953d503d49bf6086679fd93",
+    "sha256": "bb85974f1ec18c8bb327f71317be8d8b304dcffd7b293536d8c0207f22a98829",
     "url": "https://learn.microsoft.com/en-us/cpp/overview/msvc-conformance-improvements?view=msvc-170"
   },
   "MSVC language conformance": {
-    "sha256": "45753df8ebe53d9511b322f19c8526323b5f69ffe327eb218df83da8f2da5c19",
+    "sha256": "825d48d5041a57a4636a30b057259bf783b313a2335c734ab54c22fa388293a1",
     "url": "https://learn.microsoft.com/en-us/cpp/overview/visual-cpp-language-conformance?view=msvc-170"
   },
   "MSVC what's new": {
-    "sha256": "172f73877d600850713560e670aec1fd2c5bbf67376f4b47839c1986d41ed5f1",
+    "sha256": "5cd900a460df4fb791898c50afc840bf4d8132d0254c3a889e527e27d2960a6f",
     "url": "https://learn.microsoft.com/en-us/cpp/overview/what-s-new-for-msvc?view=msvc-170"
   },
   "Visual Studio release notes": {
-    "sha256": "0d2994769012e8ece27605584f7324e6af215eeabdb7100d0fc222b7fd0ed999",
+    "sha256": "7c3ff4366ae44222f3b2999ac2ff2c9fdfa04ad0a730efcb024670e06a757420",
     "url": "https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes"
   }
 }
